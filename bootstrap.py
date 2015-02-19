@@ -35,7 +35,7 @@ if __name__ == "__main__":
                 os.system("ln -si %s %s" % (original, homeFile))
 
             else:
-                print "We encountered some weird file and are ignoring it"
+                print "We encountered some weird file and are ignoring it (" + f + ")"
 
     print "Done linking..."
 

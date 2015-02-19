@@ -33,5 +33,7 @@ plugins=(git python screen)
 
 source $ZSH/oh-my-zsh.sh
 
+bindkey -e
+
 if [ -e "$HOME/.bash_profile" ]; then source $HOME/.bash_profile; fi
 if [ -e "$HOME/.work-env" ]; then source $HOME/.work-env; fi

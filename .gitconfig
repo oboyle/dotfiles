@@ -11,8 +11,9 @@
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
-[color]
-	ui = true
 [user]
 	name = oboyle
 	email = oboyle.todd@gmail.com
+	whamzilla = push --no-verify origin master
+[color]
+	ui = true

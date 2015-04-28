@@ -17,3 +17,5 @@
 	whamzilla = push --no-verify origin master
 [color]
 	ui = true
+[core]
+	excludesfile = /Users/oboyle/.gitignore

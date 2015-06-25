@@ -39,3 +39,6 @@ if [ -e "$HOME/.bash_profile" ]; then source $HOME/.bash_profile; fi
 if [ -e "$HOME/.work-env" ]; then source $HOME/.work-env; fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'

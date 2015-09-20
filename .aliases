@@ -35,3 +35,6 @@ alias dockercoreos='export DOCKER_HOST="tcp://127.0.0.1:2375"'
 # Change DNS settings easily
 alias setdns='networksetup -setdnsservers Wi-Fi'
 alias getdns='networksetup -getdnsservers Wi-Fi'
+
+# setup brand builder
+alias tworkon='cp ~/thinkmapprojects/andrews_tree/webapp/WEB-INF/web.xml.devel ~/thinkmapprojects/andrews_tree/webapp/WEB-INF/web.xml' 

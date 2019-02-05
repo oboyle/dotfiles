@@ -11,11 +11,18 @@
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
+	whamzilla = push --no-verify origin master
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 [user]
 	name = oboyle
 	email = oboyle.todd@gmail.com
-	whamzilla = push --no-verify origin master
 [color]
 	ui = true
 [core]
 	excludesfile = /Users/oboyle/.gitignore
+[url "git@github.com:"]
+	insteadOf = git://github.com/
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

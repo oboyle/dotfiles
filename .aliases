@@ -25,12 +25,11 @@ alias td='/opt/local/bin/twistd-2.7'
 alias gl='git log'
 alias gd='git diff'
 alias gs='git status'
-alias git_delete_merged_branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias git_delete_merged_branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -D'
 
 # Docker Aliases
 alias dockercleanup='docker rmi -f $(docker images -q --filter "dangling=true")'
-alias dockershellinit='$(boot2docker shellinit)'
-alias dockercoreos='export DOCKER_HOST="tcp://127.0.0.1:2375"'
+alias dockershellinit='eval "$(docker-machine env default)"'
 
 # Change DNS settings easily
 alias setdns='networksetup -setdnsservers Wi-Fi'
@@ -38,3 +37,8 @@ alias getdns='networksetup -getdnsservers Wi-Fi'
 
 # setup brand builder
 alias tworkon='cp ~/thinkmapprojects/andrews_tree/webapp/WEB-INF/web.xml.devel ~/thinkmapprojects/andrews_tree/webapp/WEB-INF/web.xml' 
+
+# Find listening ports
+alias uports='sudo lsof -n -i udp -P'
+alias tports='sudo lsof -n -i tcp -P -sTCP:LISTEN'
+alias myip='curl https://whatismyaddress.herokuapp.com/'

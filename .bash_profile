@@ -24,16 +24,3 @@ export PROMPT_COMMAND="history -a; history -c; history -r"
 
 if [ -e .git-completion.bash ]; then source .git-completion.bash; fi
 if [ -e "$HOME/.work-env" ]; then source $HOME/.work-env; fi
-
-# ruby environment
-
-export PATH="$HOME/.rbenv/shims:$PATH"
-
-export JAVA_HOME=`/usr/libexec/java_home`
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$HOME/.rbenv/shims:$PATH"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi

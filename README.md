@@ -41,3 +41,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 * `python bootstrap.py`
 
 * pick your theme from https://github.com/robbyrussell/oh-my-zsh/wiki/Themes and add it to your .zshrc.
+
+* `source ~/.osx` to update OSX settings to be more developer friendly

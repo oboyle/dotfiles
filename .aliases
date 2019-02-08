@@ -27,9 +27,6 @@ alias gd='git diff'
 alias gs='git status'
 alias git_delete_merged_branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -D'
 
-# Make the Homebrewed python default
-alias python="python3"
-
 # Docker Aliases
 alias dockercleanup='docker rmi -f $(docker images -q --filter "dangling=true")'
 alias dockershellinit='eval "$(docker-machine env default)"'

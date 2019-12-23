@@ -24,3 +24,4 @@ export PROMPT_COMMAND="history -a; history -c; history -r"
 
 if [ -e .git-completion.bash ]; then source .git-completion.bash; fi
 if [ -e "$HOME/.work-env" ]; then source $HOME/.work-env; fi
+hash pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
